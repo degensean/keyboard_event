@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'package:logger/logger.dart';
-
 import 'flags.dart';
 
 const String _kOnLogCallbackMethod = 'onLog';
@@ -92,8 +90,6 @@ class KeyEvent {
 
 typedef Listener = void Function(KeyEvent keyEvent);
 typedef CancelListening = void Function();
-
-Logger log = Logger();
 
 class KeyBoardState {
   Set<int> state = <int>{};
